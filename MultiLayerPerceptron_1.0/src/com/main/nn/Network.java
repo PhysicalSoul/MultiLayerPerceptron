@@ -3,7 +3,7 @@ package com.main.nn;
 public class Network {
 
 	public static double Learning_Rate;
-	
+
 	public double[][] data;
 	public double[] target;
 
@@ -15,7 +15,7 @@ public class Network {
 
 	public Network(int in, int hidd, int out, double[][] data, double[] taregt, double Lr, boolean show) {
 		Network.Learning_Rate = Lr;
-		
+
 		this.data = data;
 		this.target = taregt;
 		this.show = show;
@@ -42,7 +42,8 @@ public class Network {
 
 	public void train(int nb) {
 		for (int i = 0; i < nb; i++) {
-			System.out.println("-------------------------------- Iter: " + (i + 1) + "---------------------------------");
+			System.out
+					.println("-------------------------------- Iter: " + (i + 1) + "---------------------------------");
 			for (int j = 0; j < data.length; j++) {
 
 				// Forward stuff....
@@ -63,7 +64,7 @@ public class Network {
 
 				if (show)
 					show(j);
-				
+
 				// Backward stuff....
 				for (Neuron n : output_layer) {
 					n.feedBackward_out();
@@ -74,6 +75,25 @@ public class Network {
 				for (int x = 0; x < input_layer.length; x++) {
 					input_layer[x].feedBackward_hidd(hidden_layer, x);
 				}
+			}
+		}
+	}
+
+	public void test(double[][] data) {
+		for (int j = 0; j < data.length; j++) {
+			// Forward stuff....
+			for (Neuron n : input_layer) {
+				n.input = data[j];
+				n.feedForward();
+			}
+
+			for (Neuron n : hidden_layer) {
+				n.init_input(input_layer);
+				n.feedForward();
+			}
+			for (Neuron n : output_layer) {
+				n.init_input(hidden_layer);
+				n.feedForward();
 			}
 		}
 	}
