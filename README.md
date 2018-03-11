@@ -3,12 +3,14 @@
 Java implementation of a MultiLayerPerceptron_2.0 by PhysicalSoul
 	
 	 The network can support:
-	  one input layer ==> with any number of neuron
-	  any number of ==> hidden layer ==> with any number of neuron
-	  one output layer ==> with any number of neuron
+	  -one input layer*
+	  -any number of hidden layer*
+	  -one output layer*
+	  
+	  *and of course any number of neuron per layer
 	  
 	  The network have 8 params--------------------------------------------------------------------------------------------
-	  1- The number of input neurons (int)
+	  1- The nb of input neurons (int)
 	  2- The nb of hidden layers (int)
 	  3- The nb of neuron per hidden layer (int) (all the hidden layers will have the same number of neuron)
 	  4- The nb of output neurons (int)
