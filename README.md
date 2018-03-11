@@ -30,4 +30,3 @@ Java implementation of a MultiLayerPerceptron_2.0 by PhysicalSoul
 	  The code is not perfect and bit confused. But trust me it works fine.
 	  I am currently working on a more easy to use version, if you have any question about this code or any suggestion 
 	  for improving it please feel free to contact me at any time.
-	 
