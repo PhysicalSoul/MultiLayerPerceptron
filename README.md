@@ -1,3 +1,3 @@
-# MultiLayer_Perceptron_1.0
-THIS IS A SIMPLE IMPLEMENTATION OF A MULTILAYER PERCEPTRON IN JAVA. 
-I am currently working on a more sophisticated version of this MLP, that i am about to commit soon.
+# New MultiLayer_Perceptron_2.0
+THIS NEW IMPLEMENTATION OF A MULTILAYER PERCEPTRON IN JAVA IS NOW AVAILABLE ! 
+I am currently working on a more easy to use version of it, that i am about to commit soon.
