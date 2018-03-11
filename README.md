@@ -9,7 +9,7 @@ Java implementation of a MultiLayerPerceptron_2.0 by PhysicalSoul
 	  
 	  *and of course any number of neuron per layer
 	  
-	  The network have 8 params--------------------------------------------------------------------------------------------
+	  The network have 8 params----------------------------------------------------------------------------------------
 	  1- The nb of input neurons (int)
 	  2- The nb of hidden layers (int)
 	  3- The nb of neuron per hidden layer (int) (all the hidden layers will have the same number of neuron)
