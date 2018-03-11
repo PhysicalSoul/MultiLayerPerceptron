@@ -50,8 +50,7 @@ public class Network {
 
 	public void train(int nb) {
 		for (int i = 0; i < nb; i++) {
-			System.out
-					.println("-------------------------------- Iter: " + (i + 1) + "---------------------------------");
+			System.out.println("-------------------------------- Iter: " + (i + 1) + "---------------------------------");
 			for (int j = 0; j < data.length; j++) {
 
 				// Forward stuff....
@@ -129,8 +128,7 @@ public class Network {
 
 	public void show(int j) {
 		for (int y = 0; y < output_layer.length; y++) {
-			System.out.println("Out: " + output_layer[y].output + " || Tar: " + target[j] + " || Err: "
-					+ (output_layer[y].output - target[j]));
+			System.out.println("Out: " + output_layer[y].output + " || Tar: " + target[j] + " || Err: "+ (output_layer[y].output - target[j]));
 		}
 	}
 
